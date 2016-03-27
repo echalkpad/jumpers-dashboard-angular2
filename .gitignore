@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+lib-cov
+
+build/Release
+node_modules
+bower_components
+
+.lock-wscript
+.tsdrc
+.idea
+dist
+dev
+lib
+test
+tsd_typings

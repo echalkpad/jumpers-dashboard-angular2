@@ -1,0 +1,42 @@
+{
+    "version": "1.6.0",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true
+    },
+    "files": [
+        "./app/app.ts",
+        "./app/components/country-list-view/country-list-view.ts",
+        "./app/components/dashboard/dashboard.ts",
+        "./app/components/jumper-list-view/jumper-list-view.ts",
+        "./app/components/rd-loading/rd-loading.ts",
+        "./app/components/rd-widget-body/rd-widget-body.ts",
+        "./app/components/rd-widget-footer/rd-widget-footer.ts",
+        "./app/components/rd-widget-header/rd-widget-header.ts",
+        "./app/components/rd-widget/rd-widget.ts",
+        "./app/components/tables/tables.ts",
+        "./app/init.ts",
+        "./app/services/country_list.ts",
+        "./app/services/jumper_list.ts",
+        "./app/typings/_custom.d.ts",
+        "./app/typings/ng2_test.d.ts",
+        "./tsd_typings/jasmine/jasmine.d.ts",
+        "./tsd_typings/systemjs/systemjs.d.ts",
+        "./tsd_typings/tsd.d.ts"
+    ],
+    "filesGlob": [
+        "./app/**/*.ts",
+        "./tsd_typings/**/*.d.ts"
+    ],
+    "compileOnSave": false,
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}

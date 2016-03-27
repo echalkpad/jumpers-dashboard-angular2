@@ -1,0 +1,18 @@
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Jumper</th>
+      <th>Jumps</th>
+      <th>Points</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ng-for="#jumper of model">
+      <td>{{jumper.name}}</td>
+      <td>{{jumper.jumps}}</td>
+      <td>{{jumper.points}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

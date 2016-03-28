@@ -4,13 +4,15 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_BINDINGS} from 'angular2/router';
 
 import {Dashboard} from './components/dashboard/dashboard';
 import {Tables} from './components/tables/tables';
+import {Jumpers} from './components/jumpers/jumpers';
 
 @Component({
   selector: 'app'
 })
 @RouteConfig([
   {path: '/', component: Dashboard, as: 'dashboard'},
-  {path: '/tables', component: Tables, as: 'tables'}
+  {path: '/tables', component: Tables, as: 'tables'},
+  {path: '/jumpers', component: Jumpers, as: 'jumpers'}
 ])
 @View({
   templateUrl: './app.html',

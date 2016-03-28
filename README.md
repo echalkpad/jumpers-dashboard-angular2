@@ -1,3 +1,3 @@
 # Introduction
 
-Angular2 dashboard based on the [RDash admin dashboard](http://rdash.github.io) theme
+Angular2 dashboard based on [RDash Angular2](https://github.com/ziyasal/rdash-angular2)

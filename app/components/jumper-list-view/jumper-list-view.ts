@@ -5,7 +5,7 @@ import {Component, View,CORE_DIRECTIVES} from 'angular2/angular2';
   properties: ['model']
 })
 @View({
-  templateUrl: './components/jumper-list-view/jumper-list-view.html',
+  templateUrl: './components/jumpers/jumper-list-view/jumper-list-view.html',
   directives: [CORE_DIRECTIVES]
 })
 export class JumperListView {

@@ -10,7 +10,7 @@ import {RdWidgetFooter} from 'components/rd-widget-footer/rd-widget-footer';
 import {CountryListView} from 'components/country-list-view/country-list-view';
 import {CountryListService} from 'services/country_list';
 
-import {JumperListView} from 'components/jumper-list-view/jumper-list-view';
+import {JumperListView} from 'components/jumpers/jumper-list-view/jumper-list-view';
 import {JumperListService} from 'services/jumper_list';
 
 

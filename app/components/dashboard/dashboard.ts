@@ -16,28 +16,23 @@ import {JumperListService} from 'services/jumper_list';
 
 @Component({
   selector: 'dashboard',
-  appInjector: [CountryListService]
+  bindings: [CountryListService, JumperListService]
 })
 @View({
   templateUrl: './components/dashboard/dashboard.html',
   styleUrls: ['./components/dashboard/dashboard.css'],
-  directives: [RdWidget, RdWidgetHeader, RdWidgetBody, RdWidgetFooter, RdLoading, CountryListView, JumperListView]
+  directives: [RdWidget, RdWidgetHeader, RdWidgetBody, CountryListView, JumperListView]
 })
 export class Dashboard {
 
-  servers:any[];
-  users:any[];
+  countries:any[];
+  jumpers:any[];
 
   countryListService:CountryListService;
   jumperListService:JumperListService;
 
-  constructor() {
-    this.countryListService = new CountryListService();
-    /*TODO: Inject*/
-    this.countries = this.countryListService.all();
-
-    this.jumperListService = new JumperListService();
-    /*TODO: Inject*/
-    this.jumpers = this.jumperListService.all();
+  constructor(private _countryService: CountryListService, private _jumperService: JumperListService) {
+    this.countries = _countryService.all();
+    this.jumpers = _jumperService.all();
   }
 }

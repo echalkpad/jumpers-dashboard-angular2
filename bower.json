@@ -1,10 +1,9 @@
 {
-    "name": "rdash-angular2",
+    "name": "jumpers-dashboard-angular2",
     "version": "0.0.1",
     "description": "An AngularJS2 implementation of the responsive dashboard",
-    "homepage": "https://github.com/ziyasal/rdash-angular2",
     "authors": [
-        "Ziya SARIKAYA @ziyasal <sarikayaziya@gmail.com>"
+        "Marta Carrizo"
     ],
     "contributors": [
     ],
@@ -24,6 +23,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ziyasal/rdash-angular2"
+        "url": "https://github.com/zsiva/jumpers-dashboard-angular2"
     }
 }

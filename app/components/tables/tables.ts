@@ -7,7 +7,7 @@ import {RdWidgetHeader} from 'components/rd-widget-header/rd-widget-header';
 import {RdWidgetBody} from 'components/rd-widget-body/rd-widget-body';
 import {RdWidgetFooter} from 'components/rd-widget-footer/rd-widget-footer';
 
-import {CountryListView} from 'components/country-list-view/country-list-view';
+import {CountryListView} from 'components/countries/country-list-view/country-list-view';
 import {CountryListService} from 'services/country_list';
 
 

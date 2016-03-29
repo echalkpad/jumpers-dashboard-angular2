@@ -5,6 +5,7 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_BINDINGS} from 'angular2/router';
 import {Dashboard} from './components/dashboard/dashboard';
 import {Tables} from './components/tables/tables';
 import {Jumpers} from './components/jumpers/jumpers';
+import {Flags} from './components/flags/flags';
 
 @Component({
   selector: 'app'
@@ -12,7 +13,8 @@ import {Jumpers} from './components/jumpers/jumpers';
 @RouteConfig([
   {path: '/', component: Dashboard, as: 'dashboard'},
   {path: '/tables', component: Tables, as: 'tables'},
-  {path: '/jumpers', component: Jumpers, as: 'jumpers'}
+  {path: '/jumpers', component: Jumpers, as: 'jumpers'},
+  {path: '/flags', component: Flags, as: 'flags'}
 ])
 @View({
   templateUrl: './app.html',

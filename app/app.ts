@@ -1,11 +1,10 @@
 import {Component, View, bootstrap,CORE_DIRECTIVES} from 'angular2/angular2';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_BINDINGS} from 'angular2/router';
-// import {HTTP_BINDINGS} from 'http/http';
 
 import {Dashboard} from './components/dashboard/dashboard';
 import {Tables} from './components/tables/tables';
 import {Jumpers} from './components/jumpers/jumpers';
-import {Flags} from './components/flags/flags';
+import {Countries} from './components/countries/countries';
 
 @Component({
   selector: 'app'
@@ -14,7 +13,7 @@ import {Flags} from './components/flags/flags';
   {path: '/', component: Dashboard, as: 'dashboard'},
   {path: '/tables', component: Tables, as: 'tables'},
   {path: '/jumpers', component: Jumpers, as: 'jumpers'},
-  {path: '/flags', component: Flags, as: 'flags'}
+  {path: '/countries', component: Countries, as: 'countries'}
 ])
 @View({
   templateUrl: './app.html',

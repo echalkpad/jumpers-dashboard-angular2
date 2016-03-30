@@ -4,11 +4,10 @@ import {RdWidget} from 'components/rd-widget/rd-widget';
 import {RdWidgetHeader} from 'components/rd-widget-header/rd-widget-header';
 import {RdWidgetBody} from 'components/rd-widget-body/rd-widget-body';
 
-import {CountryListView} from 'components/countries/country-list-view/country-list-view';
-import {CountryListService} from 'services/country_list';
+import {CountryListService} from '../../services/country_list';
+import {JumperListService} from '../../services/jumper_list';
 
-import {JumperListView} from 'components/jumpers/jumper-list-view/jumper-list-view';
-import {JumperListService} from 'services/jumper_list';
+import {CollectionListView} from '../collection-list-view/collection-list-view';
 
 
 @Component({
@@ -18,7 +17,7 @@ import {JumperListService} from 'services/jumper_list';
 @View({
   templateUrl: './components/dashboard/dashboard.html',
   styleUrls: ['./components/dashboard/dashboard.css'],
-  directives: [RdWidget, RdWidgetHeader, RdWidgetBody, CountryListView, JumperListView]
+  directives: [RdWidget, RdWidgetHeader, RdWidgetBody, CollectionListView]
 })
 export class Dashboard {
 

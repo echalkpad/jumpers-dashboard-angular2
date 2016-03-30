@@ -4,25 +4,24 @@ import {RdLoading} from 'components/rd-loading/rd-loading';
 import {RdWidget} from 'components/rd-widget/rd-widget';
 
 import {RdWidgetHeader} from 'components/rd-widget-header/rd-widget-header';
-import {RdWidgetBody} from 'components/rd-widget-body/rd-widget-body';
+import {RdWidgetBody} from 'components/rd-widget-body/../rd-widget-body/rd-widget-body';
 
-import {JumperListView} from 'components/jumpers/jumper-list-view/jumper-list-view';
-import {JumperListService} from 'services/jumper_list';
+import {CollectionListView} from '../collection-list-view/collection-list-view';
+import {JumperListService} from '../../services/jumper_list';
 
 @Component({
   selector: 'jumpers',
-  appInjector: [JumperListService]
+  bindings: [JumperListService]
 })
 @View({
   templateUrl: './components/jumpers/jumpers.html',
-  directives: [CORE_DIRECTIVES, RdWidget, RdWidgetHeader, RdWidgetBody, RdLoading, JumperListView]
+  directives: [CORE_DIRECTIVES, RdWidget, RdWidgetHeader, RdWidgetBody, RdLoading, CollectionListView]
 })
 export class Jumpers {
-  servers:any[];
-  jumperListService:JumperListService;
+  jumpers:any[];
 
-  constructor() {
-    this.jumperListService = new JumperListService();/*TODO: Inject*/
-    this.jumpers = this.jumperListService.all();
+  constructor(private _jumpersService: JumperListService) {
+    /* TODO: get items from collection service */
+    this.jumpers = _jumpersService.jumpers;
   }
 }

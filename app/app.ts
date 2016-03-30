@@ -5,13 +5,14 @@ import {Dashboard} from './components/dashboard/dashboard';
 import {Tables} from './components/tables/tables';
 import {Jumpers} from './components/jumpers/jumpers';
 import {Countries} from './components/countries/countries';
+import {Flags} from './components/flags/flags';
 
 @Component({
   selector: 'app'
 })
 @RouteConfig([
   {path: '/', component: Dashboard, as: 'dashboard'},
-  {path: '/tables', component: Tables, as: 'tables'},
+  {path: '/flags', component: Flags, as: 'flags'},
   {path: '/jumpers', component: Jumpers, as: 'jumpers'},
   {path: '/countries', component: Countries, as: 'countries'}
 ])

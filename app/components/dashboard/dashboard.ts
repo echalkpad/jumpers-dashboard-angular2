@@ -6,13 +6,14 @@ import {RdWidgetBody} from 'components/rd-widget-body/rd-widget-body';
 
 import {CountryListService} from '../../services/country_list';
 import {JumperListService} from '../../services/jumper_list';
+import {FlagsListService} from '../../services/flags_list';
 
 import {CollectionListView} from '../collection-list-view/collection-list-view';
 
 
 @Component({
   selector: 'dashboard',
-  bindings: [CountryListService, JumperListService]
+  bindings: [CountryListService, JumperListService, FlagsListService]
 })
 @View({
   templateUrl: './components/dashboard/dashboard.html',
@@ -23,9 +24,15 @@ export class Dashboard {
 
   countries:any[];
   jumpers:any[];
+  flags:any[];
 
-  constructor(private _countryService: CountryListService, private _jumperService: JumperListService) {
+  constructor(
+      private _countryService: CountryListService,
+      private _jumperService: JumperListService,
+      private _flagsListService: FlagsListService
+  ) {
     this.countries = _countryService.all();
     this.jumpers = _jumperService.all();
+    this.flags = _flagsListService.all();
   }
 }

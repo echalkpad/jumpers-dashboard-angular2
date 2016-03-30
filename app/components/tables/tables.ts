@@ -1,30 +1,28 @@
 import {Component, View, CORE_DIRECTIVES} from 'angular2/angular2';
 
-import {RdLoading} from 'components/rd-loading/rd-loading';
-import {RdWidget} from 'components/rd-widget/rd-widget';
+import {RdLoading} from '../rd-loading/rd-loading';
+import {RdWidget} from '../rd-widget/rd-widget';
 
-import {RdWidgetHeader} from 'components/rd-widget-header/rd-widget-header';
-import {RdWidgetBody} from 'components/rd-widget-body/rd-widget-body';
-import {RdWidgetFooter} from 'components/rd-widget-footer/rd-widget-footer';
+import {RdWidgetHeader} from '../rd-widget-header/rd-widget-header';
+import {RdWidgetBody} from '../rd-widget-body/rd-widget-body';
+import {RdWidgetFooter} from '../rd-widget-footer/rd-widget-footer';
 
-import {CountryListView} from 'components/countries/country-list-view/country-list-view';
-import {CountryListService} from 'services/country_list';
+import {CountryListService} from '../../services/country_list';
 
+import {CollectionListView} from '../collection-list-view/collection-list-view';
 
 @Component({
   selector: 'tables',
-  appInjector: [CountryListService]
+  bindings: [CountryListService]
 })
 @View({
   templateUrl: './components/tables/tables.html',
-  directives: [CORE_DIRECTIVES, RdWidget, RdWidgetHeader, RdWidgetBody, RdWidgetFooter, RdLoading, CountryListView]
+  directives: [CORE_DIRECTIVES, RdWidget, RdWidgetHeader, RdWidgetBody, RdWidgetFooter, RdLoading, CollectionListView]
 })
 export class Tables {
-  servers:any[];
-  countryListService:CountryListService;
+  countries:any[];
 
-  constructor() {
-    this.countryListService = new CountryListService();/*TODO: Inject*/
-    this.countries = this.countryListService.all();
+  constructor(private _countryService: CountryListService) {
+    this.countries = _countryService.all();
   }
 }

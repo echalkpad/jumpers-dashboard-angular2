@@ -14,9 +14,10 @@
     "files": [
         "./app/app.ts",
         "./app/components/collection-list-view/collection-list-view.ts",
+        "./app/components/collection/collection-item.ts",
         "./app/components/countries/countries.ts",
         "./app/components/dashboard/dashboard.ts",
-        "./app/components/jumpers/jumper-list-view/jumper-list-view.ts",
+        "./app/components/flags/flags.ts",
         "./app/components/jumpers/jumpers.ts",
         "./app/components/rd-loading/rd-loading.ts",
         "./app/components/rd-widget-body/rd-widget-body.ts",

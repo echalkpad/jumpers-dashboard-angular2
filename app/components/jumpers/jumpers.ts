@@ -20,7 +20,7 @@ import {JumperListService} from '../../services/jumper_list';
 export class Jumpers {
   jumpers:any[];
 
-  constructor(private _jumpersService: JumperListService) {
+  constructor(public jumpersService: JumperListService) {
     /* TODO: get items from collection service */
     this.jumpers = _jumpersService.jumpers;
   }

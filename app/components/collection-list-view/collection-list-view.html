@@ -1,12 +1,6 @@
-<div class="table-responsive">
-  <table class="table">
-      <th>Name</th>
-      <th>Jumps</th>
-    <tbody>
-    <tr *ng-for="#item of model">
-      <td>{{item.name}}</td>
-      <td>{{item.jumps}}</td>
-    </tr>
-    </tbody>
-  </table>
-</div>
+
+<ul class="list-unstyled">
+    <li *ng-for="#item of model" class="row">
+        <collection-item [item]="item"></collection-item>
+    </li>
+</ul>

@@ -9,7 +9,7 @@ import {RdWidgetFooter} from '../rd-widget-footer/rd-widget-footer';
 
 import {CountryListService} from '../../services/country_list';
 
-import {CollectionListView} from '../collection-list-view/collection-list-view';
+import {CollectionListView} from '../collection/collection-list-view';
 
 @Component({
   selector: 'tables',

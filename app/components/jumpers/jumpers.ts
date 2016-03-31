@@ -6,7 +6,7 @@ import {RdWidget} from 'components/rd-widget/rd-widget';
 import {RdWidgetHeader} from 'components/rd-widget-header/rd-widget-header';
 import {RdWidgetBody} from 'components/rd-widget-body/../rd-widget-body/rd-widget-body';
 
-import {CollectionListView} from '../collection-list-view/collection-list-view';
+import {CollectionListView} from '../collection/collection-list-view';
 import {JumperListService} from '../../services/jumper_list';
 
 @Component({
@@ -22,6 +22,5 @@ export class Jumpers {
 
   constructor(public jumpersService: JumperListService) {
     /* TODO: get items from collection service */
-    this.jumpers = _jumpersService.jumpers;
   }
 }

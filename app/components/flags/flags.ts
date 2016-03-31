@@ -4,7 +4,7 @@ import {RdWidget} from 'components/rd-widget/rd-widget';
 import {RdWidgetHeader} from 'components/rd-widget-header/rd-widget-header';
 import {RdWidgetBody} from 'components/rd-widget-body/rd-widget-body';
 
-import {CollectionListView} from '../collection-list-view/collection-list-view';
+import {CollectionListView} from '../collection/collection-list-view';
 import {FlagsListService} from '../../services/flags_list';
 
 @Component({

@@ -8,7 +8,7 @@ import {CountryListService} from '../../services/country_list';
 import {JumperListService} from '../../services/jumper_list';
 import {FlagsListService} from '../../services/flags_list';
 
-import {CollectionListView} from '../collection-list-view/collection-list-view';
+import {CollectionListView} from '../collection/collection-list-view';
 
 
 @Component({

@@ -5,7 +5,7 @@ import {RdWidget} from '../rd-widget/rd-widget';
 import {RdWidgetHeader} from '../rd-widget-header/rd-widget-header';
 import {RdWidgetBody} from '../rd-widget-body/rd-widget-body';
 
-import {CollectionListView} from 'components/collection-list-view/collection-list-view';
+import {CollectionListView} from 'components/collection/collection-list-view';
 import {CountryListService} from '../../services/country_list';
 
 @Component({

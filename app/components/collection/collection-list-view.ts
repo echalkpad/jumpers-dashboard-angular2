@@ -1,12 +1,16 @@
 import {Component, View,CORE_DIRECTIVES} from 'angular2/angular2';
-import {CollectionItemComponent} from '../collection/collection-item';
+import {CollectionItemComponent} from './collection-item';
 
 @Component({
   selector: 'collection-list-view',
   properties: ['model']
 })
 @View({
-  templateUrl: './components/collection-list-view/collection-list-view.html',
+  template: `<ul class="list-unstyled">
+      <li *ng-for="#item of model" class="row">
+          <collection-item [item]="item"></collection-item>
+      </li>
+  </ul>`,
   directives: [CORE_DIRECTIVES, CollectionItemComponent]
 })
 export class CollectionListView {

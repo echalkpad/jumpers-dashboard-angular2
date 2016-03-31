@@ -13,8 +13,8 @@
     },
     "files": [
         "./app/app.ts",
-        "./app/components/collection-list-view/collection-list-view.ts",
         "./app/components/collection/collection-item.ts",
+        "./app/components/collection/collection-list-view.ts",
         "./app/components/countries/countries.ts",
         "./app/components/dashboard/dashboard.ts",
         "./app/components/flags/flags.ts",

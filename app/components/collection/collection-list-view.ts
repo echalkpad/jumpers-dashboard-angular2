@@ -8,13 +8,21 @@ import {CollectionHeaderComponent} from './collection-header'
 })
 @View({
   template: `
-<collection-header [header]="header"></collection-header>
-
-<ul class="list-unstyled">
-      <li *ng-for="#item of model" class="row">
-          <collection-item [item]="item"></collection-item>
-      </li>
-  </ul>`,
+  <div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+        <th class="bg-primary" *ng-for="#headerItem of header">{{headerItem}}</th>
+        <th class="bg-primary">Actions</th>
+    </thead>
+    <tbody>
+        <tr *ng-for="#row of model">
+            <td *ng-for="#item of items(row);">{{row[item]}}</td>
+            <td><button (click)="edit()">Edit</button></td>
+        </tr>
+      </tbody>
+  </table>
+  </div>
+`,
   directives: [CORE_DIRECTIVES, CollectionItemComponent, CollectionHeaderComponent]
 })
 export class CollectionListView {
@@ -27,6 +35,11 @@ export class CollectionListView {
   }
   onInit() {
       this.header = Object.keys(this.model[0]);
-
+  }
+  items(row) : Array<string> {
+    return Object.keys(row);
+  }
+  edit() {
+      console.log('test');
   }
 }

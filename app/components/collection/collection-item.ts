@@ -1,19 +1,20 @@
 import {Component, View} from 'angular2/angular2';
 
 @Component({
-    selector: 'collection-item',
-    properties: ['item']
+    selector: '[collection-row]',
+    properties: ['row']
 })
 @View({
-  template: `<span class="col-xs-6">{{item.name}}</span>
-  <span class="col-xs-4">{{item.jumps}}</span>
-  <span class="col-xs-2"><button class="btn btn-default btn-sm">Edit</button></span>
-  `
+  template: `<td *ng-for="#item of row">{{item}}</td>
+  <td class="col-xs-6">{{item.name}}</td>
+    <td class="col-xs-4">{{item.jumps}}</td>
+    <td class="col-xs-2"><button class="btn btn-default btn-sm">Edit</button></td>
+    `
 })
 export class CollectionItemComponent{
-    item:any[];
+    row:any[];
 
     constructor() {
-      this.item = [];
+      this.row = [];
     }
 }

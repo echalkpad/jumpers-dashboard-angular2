@@ -6,7 +6,7 @@ import {Component, View} from 'angular2/angular2';
 })
 @View({
   template: `
-  <div>{{header}}</div>
+  <th>{{header}}</th>
   `
 })
 export class CollectionHeaderComponent{
@@ -14,9 +14,7 @@ export class CollectionHeaderComponent{
 
     constructor() {
       this.header = [];
-      console.log('TEst');
     }
     onInit() {
-        console.log(this.header);
     }
 }

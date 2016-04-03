@@ -40,6 +40,5 @@ export class CollectionListView {
     return Object.keys(row);
   }
   edit() {
-      console.log('test');
   }
 }

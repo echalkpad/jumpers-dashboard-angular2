@@ -19,6 +19,8 @@
         "./app/components/countries/countries.ts",
         "./app/components/dashboard/dashboard.ts",
         "./app/components/flags/flags.ts",
+        "./app/components/jumpers/edit/edit-input.ts",
+        "./app/components/jumpers/edit/jumpers-edit.ts",
         "./app/components/jumpers/jumpers.ts",
         "./app/components/rd-loading/rd-loading.ts",
         "./app/components/rd-widget-body/rd-widget-body.ts",
